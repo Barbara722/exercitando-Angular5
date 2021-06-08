@@ -1,0 +1,18 @@
+<h1 mat-dialog-title> Cadastrar</h1>
+<div mat-dialog-content>
+  <p>Digite Dados do Cliente</p>
+  <mat-form-field>    
+    <input matInput [(ngModel)]="DadosModal.name">
+  </mat-form-field>
+
+  <p>Telefone</p>
+  <mat-form-field>    
+    <input matInput [(ngModel)]="DadosModal.value">
+  </mat-form-field>
+
+
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancelar</button>
+  <button mat-button [mat-dialog-close]="DadosModal" cdkFocusInitial>Ok</button>
+</div>

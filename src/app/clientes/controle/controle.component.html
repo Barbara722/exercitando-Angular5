@@ -1,0 +1,25 @@
+
+<form (ngSubmit) = "onSubmit">
+    <!--"onSubmit" está puxando do Angular: controle.ts-->
+
+    <div class="form-group">
+        <label>Nosme Cliente</label>
+        <input type="text" class="form-control" [(ngModel)]="cliente.nome" 
+        name="nome">
+    </div>
+
+  <div class="form-group"> 
+  <label>Telefone</label>
+  <input type="text" class="form-control" [(ngModel)]="cliente.telefone" 
+  name="telefone">  
+
+  <div class="form-group">
+    <label>Marca</label>
+   <input type="text" class="form-control" [(ngModel)]="cliente.marca" name="marca">
+  </div>
+
+</div>
+<button type="submit" class="btn btn-success">Salvar</button>
+<!--dados puxados do controle component.ts-->
+</form>
+<!--formulário-->
